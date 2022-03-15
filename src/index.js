@@ -1,17 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM  from 'react-dom';
+//import PrimeraApp from './PrimeraApp';
+import CounterApp from './CounterApp'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import './index.css'; //Aqui va el estilo
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const divRoot = document.querySelector('#root');
+
+//ReactDOM.render( <PrimeraApp saludo="Hola, soy Goku"/> ,divRoot ); //Que quiero poner y donde 
+ReactDOM.render( <CounterApp /> ,divRoot ); //Que quiero poner y donde 
+
+
